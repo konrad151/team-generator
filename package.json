@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js --prefix server",
+	"server": "nodemon index.js --prefix server",
+	"generateFakeData": "node server/fakeDataGenerator.js",
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
+    "dev": "concurrently \"npm run generateFakeData\" \"npm run server\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
