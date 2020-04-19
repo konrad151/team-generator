@@ -1,0 +1,28 @@
+@import '../../scss/variables';
+
+.header {
+	margin-bottom: 10rem;
+	background: $primary;
+	padding: 2rem 0;
+	&__logo {
+		color: $secondary;
+		font-size: 2.6rem;
+	}
+	&__nav {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		font-size: 1.8rem;
+		height: 100%;
+	}
+	&__navItem {
+		color: $secondary;
+		margin-right: 15px;
+		&:last-of-type {
+			margin-right: 0;
+		}
+		&:hover {
+			color: $secondary;
+		}
+	}
+}
