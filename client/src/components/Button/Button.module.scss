@@ -1,0 +1,16 @@
+@import '../../scss/variables';
+
+.btn {
+	background: $primary;
+    color: $secondary;
+    font-size: 1.6rem;
+    padding: 0;
+    font-weight: bold;
+    border: 1px solid $primary;
+	border-radius: $radius;
+	&:hover {
+		background: $secondary;
+		transition: $transition;
+		color: $primary;
+	}
+}

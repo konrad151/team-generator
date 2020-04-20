@@ -1,15 +1,23 @@
-import React from 'react';
-import Input from '../../components/Input/Input'
-import Button from '../../components/Button/Button'
+import React from 'react'
+import { Container, Row, Col } from 'react-bootstrap'
+import Form from '../../components/Form/Form'
 
 const Generator = () => {
 	return (
-		<div>
-			Generator
-			<Input />
-			<Button />
-		</div>
-	);
-};
+		<main>
+			<Container>
+				<Row>
+					<Col xs={12}>
+						<Form
+							label='Max team size'
+							inputType='number'
+							redirect='/teams'
+						/>
+					</Col>
+				</Row>
+			</Container>
+		</main>
+	)
+}
 
-export default Generator;
+export default Generator

@@ -1,11 +1,12 @@
-import React from 'react';
+import React from 'react'
+import styles from './Button.module.scss'
 
-const Button = () => {
+const Button = (props) => {
+	const { type, name } = props
+
 	return (
-		<div>
-			Button
-		</div>
-	);
-};
+		<button type={type} className={styles.btn}>{name}</button>
+	)
+}
 
-export default Button;
+export default Button
