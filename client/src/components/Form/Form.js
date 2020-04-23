@@ -6,13 +6,13 @@ import styles from './Form.module.scss'
 const Form = (props) => {
 	const [groupSize, setGroupSize] = useState('')
 
-	const { label, inputType, redirect } = props
+	const { label, inputType, redirect, createTeams } = props
 
 	const history = useHistory()
 
 	const onFormSubmit = (event) => {
 		event.preventDefault()
-		console.log(groupSize)
+		createTeams(groupSize)
 		history.push(redirect)
 	}
 
