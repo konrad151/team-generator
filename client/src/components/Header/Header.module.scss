@@ -1,7 +1,12 @@
 @import '../../scss/variables';
 
 .header {
-	margin-bottom: 10rem;
+	@media (max-width: 991px) {
+		margin-bottom: 3rem;
+	}
+	@media (min-width: 992px) {
+		margin-bottom: 6rem;
+	}
 	background: $primary;
 	padding: 2rem 0;
 	&__logo {
