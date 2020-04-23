@@ -1,16 +1,16 @@
 import { useState, useEffect } from 'react'
-import teamGeneratorApi from '../apis/teamGeneratorApi'
 
-const useResources = resource => {
+const useResources = (api, resource) => {
 	const [resources, setResources] = useState([])
 
 	useEffect(() => {
-		fetchResources(resource)
-	}, [resource])
+		fetchResources(api, resource)
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [])
 
-	const fetchResources = async resource => {
+	const fetchResources = async (api, resource) => {
 		try {
-			const res = await teamGeneratorApi.get(`/${resource}`)
+			const res = await api.get(`/${resource}`)
 			setResources(res.data)
 		} catch (error) {
 			console.log(error)
