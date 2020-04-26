@@ -31,7 +31,8 @@ module.exports = {
 	  "no-tabs": 0,
 	  "react/prop-types": 0,
 	  "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
-	  "react-hooks/exhaustive-deps": "warn" // Checks effect dependencies
+	  "react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
+	  "no-unmodified-loop-condition" : 0
 	},
 	"settings": {
 	  "react": {

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import { Col } from 'react-bootstrap'
 import styles from './TeamItem.module.scss'
 
@@ -24,7 +24,7 @@ const TeamItem = (props) => {
 				</div>
 			</div>
 		</Col>
-	);
-};
+	)
+}
 
-export default TeamItem;
+export default TeamItem

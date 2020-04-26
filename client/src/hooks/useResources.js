@@ -20,4 +20,4 @@ const useResources = (api, resource) => {
 	return resources
 }
 
-export default useResources;
+export default useResources
