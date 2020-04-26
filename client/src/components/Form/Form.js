@@ -9,9 +9,19 @@ const Form = (props) => {
 	const { label, inputType, redirect, createTeams } = props
 
 	const history = useHistory()
+	
+	const validation = () => {
+		if (groupSize >= 1 && groupSize <= 5) {
+			return true
+		} else {
+			alert('Number must be from 1 to 5')
+			return false
+		}
+	}
 
 	const onFormSubmit = (event) => {
 		event.preventDefault()
+		if (!validation()) return
 		createTeams(groupSize)
 		history.push(redirect)
 	}
