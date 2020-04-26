@@ -9,9 +9,15 @@
 	}
 	background: $primary;
 	padding: 2rem 0;
+	@media (max-width: 575px) {
+		padding-bottom: 0;
+	}
 	&__logo {
 		color: $secondary;
 		font-size: 2.6rem;
+		@media (max-width: 575px) {
+			text-align: center;
+		}
 	}
 	&__nav {
 		display: flex;
@@ -19,15 +25,22 @@
 		align-items: flex-end;
 		font-size: 1.8rem;
 		height: 100%;
+		@media (max-width: 575px) {
+			justify-content: center;
+		}
 	}
 	&__navItem {
 		color: $secondary;
-		margin-right: 15px;
+		margin-right: 1.5rem;
 		&:last-of-type {
 			margin-right: 0;
 		}
 		&:hover {
 			color: $secondary;
+		}
+		@media (max-width: 575px) {
+			padding: 3rem;
+			margin-right: 0;
 		}
 	}
 }
